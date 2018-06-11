@@ -94,17 +94,17 @@ function addToInventory() {
       }
     ])
     .then(function(answer) {
-      console.log(answer);
+      // console.log(answer);
       item_number = answer.item_number;
       item_quantity = answer.item_quantity;
-      console.log("item_number :- " + item_number);
-      console.log("item_quantity :- " + item_quantity);
+      // console.log("item_number :- " + item_number);
+      // console.log("item_quantity :- " + item_quantity);
       executeSQL(
         "UPDATE products SET stock_quantity = stock_quantity + ? WHERE item_id = ?",
         [item_quantity, item_number],
         function(err, sqlResult) {
           if (err) throw err;
-          console.log(sqlResult);
+          console.log("Successfully added inventory");
         }
       );
     });
@@ -136,9 +136,9 @@ function addNewProduct() {
       }
     ])
     .then(function(answers) {
-      console.log(answers);
+      // console.log(answers);
       executeSQL(
-        "INSERT INTO products (product_name, department_name, price, stock_quantity) VALUES (?,?,?,?)",
+        "INSERT INTO products (product_name, department_name, price, stock_quantity, product_sales) VALUES (?,?,?,?,0.0)",
         [
           answers.product_name,
           answers.department_name,
@@ -147,7 +147,7 @@ function addNewProduct() {
         ],
         function(err, data) {
           if (err) throw err;
-          // console.log(data);
+          console.log("Successfully added the new Product");
         }
       );
     });
