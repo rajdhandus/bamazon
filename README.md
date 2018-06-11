@@ -18,7 +18,7 @@ To run this module in the terminal:
 
 ### Demo
 
-![bamazonCustomer](https://drive.google.com/open?id=1nhukxdSbB1VlvZC_lEra7aIoV4Z0kKlY)
+[bamazonCustomer](https://drive.google.com/open?id=1nhukxdSbB1VlvZC_lEra7aIoV4Z0kKlY)
 
 ## Manager Module
 
@@ -28,7 +28,7 @@ To run this module in the terminal:
 
 ### Demo
 
-![bamazonManager](https://drive.google.com/open?id=1KqhPLojAz96ohJOkc_TvTL3xkYixpTwh)
+[bamazonManager](https://drive.google.com/open?id=1KqhPLojAz96ohJOkc_TvTL3xkYixpTwh)
 
 ## Supervisor Module
 
@@ -38,5 +38,5 @@ To run this module in the terminal:
 
 ### Demo
 
-![bamazonSupervisor](https://drive.google.com/open?id=1b-rj7aY1mW3Y4IEFwFJMi5fLI7ysDwzl)
+[bamazonSupervisor](https://drive.google.com/open?id=1b-rj7aY1mW3Y4IEFwFJMi5fLI7ysDwzl)
 
