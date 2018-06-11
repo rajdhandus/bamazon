@@ -11,11 +11,11 @@ bamazon uses : [CLI Table 2](https://www.npmjs.com/package/cli-table2), [Inquire
 ___
 
 ## Customer Module
-### Start
 
 To run this module in the terminal:
 
 ```node bamazonCustomer.js```
 
+### Demo
 
-### Menu
+![bamazonCustomer](https://github.com/rajdhandus/bamazon/blob/master/bamazonCustomer.gif)
