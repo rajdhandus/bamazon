@@ -104,7 +104,13 @@ function addToInventory() {
         [item_quantity, item_number],
         function(err, sqlResult) {
           if (err) throw err;
-          console.log("Successfully added inventory");
+          if (sqlResult.changedRows === 0) {
+            console.log(
+              "The inventory was not addedd successfully! Please contact the supervisor"
+            );
+          } else {
+            console.log("Successfully added inventory");
+          }
         }
       );
     });

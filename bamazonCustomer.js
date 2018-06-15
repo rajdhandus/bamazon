@@ -36,6 +36,7 @@ connection.connect(function(err) {
           var requested_stock = data[0].stock_quantity;
           if (requested_stock < answers.quantity) {
             console.log("Insufficient quantity!");
+            connection.end();
           } else {
             var new_stock_quantity = requested_stock - answers.quantity;
             connection.query(
